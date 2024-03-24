@@ -1,0 +1,252 @@
+/* CABEÇALHO */
+
+#cabecalho{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    height: 50px;
+}
+
+.menu__lista{
+    display: flex;
+    gap:40px;
+}
+
+.menu__lista__item{
+    list-style: none;
+}
+
+.menu__lista__link{
+    transition: 2s;
+    text-decoration: none;
+    color: #808080;
+}
+
+.menu__lista__link:hover{
+    
+    text-decoration: underline;
+}
+
+/* BANNER */
+
+#banner{
+    position: relative;
+}
+
+.banner__imagem{
+    width: 100%;
+    height: calc(100vh - 50px);
+    object-fit: cover;
+
+}
+
+.banner__texto{
+    width: 100%;
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    font-size: 70px;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .80);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:768px){
+    .banner__texto{
+        font-size: 50px;
+    }
+}
+
+/* SOBRE */
+
+#sobre{
+    text-align: center;
+    padding: 40px;
+}
+
+.sobre__titulo{
+    color: #8D0606;
+    font-family:Pacifico, cursive;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.sobre__descricao{
+    color: #8C8888;
+    font-family:Roboto;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+@media (max-width:768px){
+    .sobre__titulo{
+        font-size: 32px;
+    }
+    
+    .sobre__descricao{
+        font-size:24px
+    }
+}
+
+/* RECEITAS */
+
+#cortes{
+    background-color: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 60px;
+}
+
+.corte{
+    margin: auto;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+}
+
+.corte__conteudo{
+    padding: 15px;
+}
+
+.corte__titulo{
+    font-size: 23px;
+}
+
+.corte__descricao {
+    font-size: 19px;
+    line-height: 1.5; 
+}
+
+.corte__botao{
+    background-color: #9e0707;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding:13px 15px 13px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.corte__botao:hover{
+    background-color: #620404;
+}
+
+@media(max-width: 834px){
+ 
+    .corte{
+        width: 40%;
+    }
+}
+
+/* QUEM SOMOS */
+
+#quemSomos{
+    text-align: center;
+    padding: 80px;
+    flex-wrap: wrap;
+}
+
+.quemSomos__titulo{
+    color: #8D0606;
+    font-size: 51px;
+    font-family: Pacifico, cursive;
+}
+
+.quemSomos__descricao{
+    font-weight: 100;
+    font-size: 30px;
+    color: #8C8888;
+}
+
+.pessoas{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    gap: 5px;
+}
+
+.pessoa{
+    display: flex;
+    flex-direction: column;
+}
+
+.pessoa__nome{
+    margin: 16px 0;
+    color: #8D0606;
+    font-size: 35px;
+    font-family: Pacifico, cursive;
+}
+
+.pessoa__imagem{
+    width: 300px;
+    height: 300px;
+    margin:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.pessoa__imagem--roberta{
+    background-image: url('../img/pessoas/roberta.jpg');
+}
+
+.pessoa__imagem--marcela{
+    background-image: url('../img/pessoas/marcela.jpg');
+}
+
+.pessoa__imagem--andreia{
+    background-image: url('../img/pessoas/andreia.jpg');
+}
+
+@media (min-width: 0){
+    .pessoas{
+        flex-direction: column;
+    }
+
+    .pessoa{
+        margin-bottom: 32px;
+    }
+
+    .pessoa__imagem{
+        width: 350px;
+        height: 350px;
+    }
+}
+/* IMAGENS SE MANTEREM NO TAMANHO DA TELA */
+@media (min-width: 768px){
+    .pessoas{
+        flex-direction: row;
+    }
+
+    .pessoa__imagem{
+        width: 250px;
+        height: 250px;
+    }
+}
+/* TELA DE COMPUTADOR */
+@media (min-width: 1024px){
+
+    .pessoa__imagem{
+    width: 300px;
+    height: 300px;
+    }
+}
+
+/* RODAPE */
+
+#rodape{
+    background-color: #bfbfbf;
+    color: #fdfdfd;
+    text-transform: lowercase;
+    text-align: right;
+    padding: 20px 10px;
+}
